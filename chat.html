@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Chat | Kakao Clone</title>
 </head>
-<body>
+<body class="chats-body">
+    <div class="header-wrapper">
     <div class="status-bar">
     <div class="status-bar_column">
         <span class="status-bar_clock">13:54</span>
@@ -36,39 +37,54 @@
             </span>
         </div>
     </header>
-    <main class="chat">
+</div>
+    <main class="chat-screen">
         <ul class="chat_messages">
-            <span class="chat_timestamp">Fridqy, January</span>
+            <span class="chat_timestamp">Fridqy, January 11, 2020</span>
             <li class="incoming-message message">
                 <img src="images/avatar.jpg" class="m-avatar message_avatar">
                 <div class="messge_content">
+                    <span class="message_bubble">
+                        Coungrats I love you!
+                    </span>
                     <span class="message_author">
                         Best Friend
                     </span>
-                    <div class="message_bubble">
-                        Coungrats I love you!
-                    </div>
                 </div>
-                <span class="message_timestamp"></span>
+            </li>
+            <li class="sent-message message">
+                <div class="messge_content">
+                    <span class="message_bubble">
+                        Thank you see you soon~!
+                    </span>
+                </div>
             </li>
             <li class="incoming-message message">
-                <span class="message_timestamp"></span>
+                <img src="images/avatar.jpg" class="m-avatar message_avatar">
                 <div class="messge_content">
-                    <div class="message_bubble">
+                    <span class="message_bubble">
+                        Coungrats I love you!
+                    </span>
+                    <span class="message_author">
+                        Best Friend
+                    </span>
+                </div>
+            </li>
+            <li class="sent-message message">
+                <div class="messge_content">
+                    <span class="message_bubble">
                         Thank you see you soon~!
-                    </div>
+                    </span>
                 </div>
             </li>
         </ul>
     </main>
-    <div class="chat_write">
-        <div class="chat_write-column">
+    <div class="chat_write-container">
+        <input type="text" placeholder="Send message" class="chat_write chat_write-input">
+        <div class="chat_icon-left chat_icon">
             <i class="far fa-plus-square"></i>
         </div>
-        <div class="chat_write-column">
-            <input type="text" placeholder="Send message" class="chat_write-input">
-        </div>
-        <div class="chat_write-column">
+        <div class="chat_icon-right chat_icon">
             <span class="chat_write-icon">
                 <i class="far fa-smile-wink"></i>
             </span>
@@ -76,6 +92,11 @@
                 <i class="fas fa-microphone"></i>
             </span>
         </div>
+    </div>
+    <div class="bigScreen">
+        <span class="bigScreen_text">
+            Please make your screen
+        </span>
     </div>
 </body>
 </html>
